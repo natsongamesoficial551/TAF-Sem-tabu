@@ -80,15 +80,15 @@
             transform: translate(-50%, -50%) scale(0);
             background: linear-gradient(135deg, var(--accent-gold) 0%, #f5d03b 100%);
             color: var(--bg-primary);
-            padding: 3rem 4rem;
-            border-radius: 25px;
+            padding: 2rem 3rem;
+            border-radius: 20px;
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8);
             z-index: 10000;
             text-align: center;
             opacity: 0;
             transition: all 0.5s ease;
-            max-width: 90%;
-            border: 5px solid var(--bg-primary);
+            max-width: 85%;
+            border: 4px solid var(--bg-primary);
         }
 
         .floating-ad.show {
@@ -98,22 +98,22 @@
 
         .floating-ad h2 {
             font-family: "Montserrat", sans-serif;
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: 900;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
         }
 
         .floating-ad .btn-ad {
             display: inline-block;
-            margin-top: 2rem;
-            padding: 1.5rem 4rem;
+            margin-top: 1.5rem;
+            padding: 1.2rem 3rem;
             background: var(--bg-primary);
             color: var(--accent-gold);
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -130,15 +130,15 @@
 
         .close-ad {
             position: absolute;
-            top: 15px;
-            right: 20px;
+            top: 10px;
+            right: 15px;
             background: var(--bg-primary);
             color: var(--accent-gold);
             border: none;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -307,10 +307,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: auto;
+            min-height: calc(100vh - 100px);
             position: relative;
             z-index: 1;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .hero-cta-top {
@@ -332,23 +332,27 @@
 
         .hero-cta-top h2 {
             font-family: "Montserrat", sans-serif;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             font-weight: 900;
             color: var(--accent-gold);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
         }
 
         .btn-hero-comprar {
             display: inline-block;
-            padding: 1rem 2.5rem;
+            padding: 1.2rem 3rem;
             background: var(--accent-gold);
             color: var(--bg-primary);
             text-decoration: none;
             font-family: "Montserrat", sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -376,13 +380,15 @@
         }
 
         .hero img {
-            max-width: 280px;
+            max-width: 400px;
             width: 100%;
             height: auto;
             border-radius: 0;
             box-shadow: none;
             border: none;
             transition: transform 0.5s ease;
+            display: block;
+            margin: 0 auto;
         }
 
         .hero img:hover {
@@ -884,6 +890,7 @@
 
         /* Responsive */
         /* Responsive */
+        /* Responsive */
         @media (max-width: 1024px) {
             .section-title {
                 font-size: 2.5rem;
@@ -892,21 +899,36 @@
             .hero {
                 padding: 2rem 5%;
                 margin-top: 100px;
-                gap: 1.5rem;
+                gap: 2rem;
+                min-height: calc(100vh - 100px);
             }
 
             .hero img {
-                max-width: 250px;
+                max-width: 350px;
             }
 
             .hero-cta-top h2 {
-                font-size: 1.6rem;
+                font-size: 2rem;
                 letter-spacing: 1.2px;
+                gap: 1rem;
             }
 
             .btn-hero-comprar {
-                font-size: 1.1rem;
-                padding: 0.9rem 2.2rem;
+                font-size: 1.2rem;
+                padding: 1.1rem 2.5rem;
+            }
+
+            .floating-ad {
+                padding: 1.8rem 2.5rem;
+            }
+
+            .floating-ad h2 {
+                font-size: 2rem;
+            }
+
+            .floating-ad .btn-ad {
+                font-size: 1.2rem;
+                padding: 1.1rem 2.5rem;
             }
 
             .valores-row {
@@ -1015,30 +1037,36 @@
             .hero {
                 padding: 2rem 5%;
                 margin-top: 80px;
-                gap: 1.2rem;
+                gap: 1.5rem;
+                min-height: calc(100vh - 80px);
             }
 
             .hero-cta-top h2 {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
                 letter-spacing: 1px;
+                gap: 0.9rem;
             }
 
             .btn-hero-comprar {
-                font-size: 1rem;
-                padding: 0.85rem 2rem;
+                font-size: 1.1rem;
+                padding: 1rem 2.3rem;
+            }
+
+            .floating-ad {
+                padding: 1.5rem 2rem;
             }
 
             .floating-ad h2 {
-                font-size: 2rem;
+                font-size: 1.7rem;
             }
 
             .floating-ad .btn-ad {
-                font-size: 1.2rem;
-                padding: 1.2rem 3rem;
+                font-size: 1.1rem;
+                padding: 1rem 2.3rem;
             }
 
             .hero img {
-                max-width: 220px;
+                max-width: 300px;
             }
 
             .valores-row {
@@ -1194,30 +1222,39 @@
             .hero {
                 padding: 1.5rem 4%;
                 margin-top: 70px;
-                gap: 1rem;
+                gap: 1.2rem;
+                min-height: calc(100vh - 70px);
             }
 
             .hero-cta-top h2 {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 letter-spacing: 0.8px;
+                gap: 0.7rem;
             }
 
             .btn-hero-comprar {
-                font-size: 0.9rem;
-                padding: 0.75rem 1.8rem;
+                font-size: 1rem;
+                padding: 0.9rem 2rem;
             }
 
             .floating-ad {
-                padding: 2rem 2.5rem;
+                padding: 1.3rem 1.8rem;
+                max-width: 90%;
             }
 
             .floating-ad h2 {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
 
             .floating-ad .btn-ad {
                 font-size: 1rem;
-                padding: 1rem 2rem;
+                padding: 0.9rem 2rem;
+            }
+
+            .close-ad {
+                width: 30px;
+                height: 30px;
+                font-size: 1.1rem;
             }
 
             section {
@@ -1225,7 +1262,7 @@
             }
 
             .hero img {
-                max-width: 200px;
+                max-width: 260px;
             }
 
             .valores-row {
@@ -1366,18 +1403,37 @@
                 font-size: 1.1rem;
             }
 
+            .hero {
+                min-height: calc(100vh - 65px);
+                margin-top: 65px;
+            }
+
             .hero-cta-top h2 {
-                font-size: 0.85rem;
+                font-size: 1rem;
                 letter-spacing: 0.5px;
+                gap: 0.6rem;
             }
 
             .btn-hero-comprar {
-                font-size: 0.8rem;
-                padding: 0.65rem 1.5rem;
+                font-size: 0.9rem;
+                padding: 0.8rem 1.7rem;
+            }
+
+            .floating-ad {
+                padding: 1.2rem 1.5rem;
+            }
+
+            .floating-ad h2 {
+                font-size: 1.2rem;
+            }
+
+            .floating-ad .btn-ad {
+                font-size: 0.9rem;
+                padding: 0.8rem 1.7rem;
             }
 
             .hero img {
-                max-width: 180px;
+                max-width: 240px;
             }
 
             .btn-comprar {
