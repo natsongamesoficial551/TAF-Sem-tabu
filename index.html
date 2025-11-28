@@ -851,6 +851,15 @@ section {
     max-width: 300px;
 }
 
+.criador-subtitle {
+    color: var(--text-white);
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
 .criador-card.fade-in {
     opacity: 1;
     transform: scale(1);
@@ -1003,6 +1012,10 @@ footer p {
         min-height: calc(100vh - 80px);
         justify-content: flex-start;
     }
+
+    .criador-subtitle {
+    font-size: 0.95rem;
+}
 
     .hero-cta-top {
         gap: 0.8rem;
@@ -1229,6 +1242,10 @@ section {
         min-height: calc(100vh - 70px);
         justify-content: flex-start;
     }
+
+    .criador-subtitle {
+    font-size: 0.85rem;
+}
 
 .hero-cta-top {
         gap: 0.6rem;
@@ -1478,7 +1495,7 @@ header {
     </section>
 
     <!-- Missão Section -->
-    <section id="missao"></section>
+    <section id="missao">
         <h2 class="section-title">Missão</h2>
         <div class="missao-grid">
             <div class="missao-item animate-on-scroll">
@@ -1654,21 +1671,24 @@ header {
             </div>
 
             <h3 class="criadores-title">Criadores</h3>
-            <div class="criadores-grid">
-                <div class="criador-card animate-on-scroll">
-                    <img src="./Edu.jpeg" alt="Eduardo Quitto">
-                    <h3>Eduardo Quitto</h3>
-                </div>
-                <div class="criador-card animate-on-scroll">
-                    <img src="./Eme.jpeg" alt="Emerson Roezanski">
-                    <h3>Emerson Roezanski</h3>
-                </div>
-                <div class="criador-card animate-on-scroll">
-                    <img src="./Ale.jpeg" alt="Alexandre Nascimento">
-                    <h3>Alexandre Nascimento</h3>
-                </div>
-            </div>
-        </div>
+<div class="criadores-grid">
+    <div class="criador-card animate-on-scroll">
+        <img src="./Edu.jpeg" alt="Eduardo Quitto">
+        <h3>Professor </h3>
+        <h3>Eduardo Quitto</h3>
+        <p class="criador-subtitle">Personal Trainer</p>
+    </div>
+    <div class="criador-card animate-on-scroll">
+        <img src="./Eme.jpeg" alt="Emerson Roezanski">
+        <h3>Professor</h3> <h3>Emerson Roezanski</h3>
+        <p class="criador-subtitle">Personal Trainer</p>
+    </div>
+    <div class="criador-card animate-on-scroll">
+        <img src="./Ale.jpeg" alt="Alexandre Nascimento">
+        <h3>Professor</h3> <h3>Alexandre Nascimento</h3>
+        <p class="criador-subtitle">Personal Trainer</p>
+    </div>
+</div>
     </section>
 
     <!-- Footer -->
